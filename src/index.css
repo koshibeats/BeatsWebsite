@@ -1,0 +1,318 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #111;
+}
+html {
+	position: sticky;
+}
+
+.navbar {
+	display: flex;
+	width: 100%;
+	background-color: rgb(29, 26, 26);
+	justify-content: space-between;
+}
+.right {
+	display: flex;
+	padding: 0 20px;
+	gap: 20px;
+
+	background-color: rgb(29, 26, 26);
+	justify-content: flex-end;
+}
+.left {
+	display: flex;
+	flex-grow: 1;
+	width: 100%;
+	background-color: rgb(29, 26, 26);
+}
+#logo {
+	font-size: 20px;
+	color: white;
+	align-self: center;
+	padding: 20px;
+}
+#einkaufswagen {
+	width: 30px;
+	height: 30px;
+	filter: invert(1);
+	align-self: center;
+	transform: scaleX(-1);
+}
+#einkaufswagen:hover {
+	background-color: rgb(49, 48, 48);
+}
+#checkout {
+	font-size: 15px;
+	align-self: center;
+	color: white;
+	padding: 10px;
+	transition: .6s ease;
+}
+#checkout:hover {
+	border-radius: 20px;
+	background-color: rgb(59, 59, 59);
+}
+#signIn {
+	height: 40px;
+	padding: 5px 20px;
+	align-self: center;
+	font-size: 15px;
+	background-color: rgb(7, 111, 196);
+
+	border-style: none;
+	font-family: "Open Sans";
+	border-radius: 40px;
+	color: white;
+}
+.searchBar {
+	display: flex;
+	align-self: center;
+	flex-grow: 1;
+	height: 50%;
+	background-color: rgb(36, 35, 35);
+	border-radius: 20px;
+}
+#lupe {
+	height: 15px;
+	filter: invert(1);
+	width: 15px;
+	align-self: center;
+	margin-left: 10px;
+}
+#inputBox {
+	align-self: center;
+	height: 20px;
+	border-radius: 20px;
+	flex-grow: 1;
+	justify-content: space-between;
+	border: none;
+	background-color: rgb(36, 35, 35);
+	color: rgb(255, 255, 255);
+	font-family: "Open Sans";
+	padding: 0 10px;
+	outline: none;
+}
+.searchBar:focus-within {
+	border: 1px solid rgb(7, 111, 196);
+}
+#sell {
+	height: 40px;
+	padding: 5px 20px;
+	align-self: center;
+	font-size: 15px;
+	background-color: rgb(7, 111, 196);
+
+	border-style: none;
+	font-family: "Open Sans";
+	border-radius: 40px;
+	color: white;
+}
+#register {
+	align-self: center;
+	color: white;
+	font-size: 15px;
+	font-family: "Open Sans";
+}
+#register:hover {
+	text-decoration: underline;
+}
+#wtf {
+	color: white;
+	align-self: center;
+	font-size: 20px;
+}
+
+.visualizer {
+	display: flex;
+	background-color: rgb(66, 63, 63);
+	flex-shrink: 1;
+	height: 50%;
+	align-items: center;
+	margin-top: 30px;
+	width: 100%;
+	border-radius: 20px;
+	width: 370px;
+}
+.rapper {
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.buyBeats {
+	display: block;
+	height: 200px;
+	width: 1000px;
+	background-color: transparent;
+	position: relative;
+	right: 440px;
+	align-self: center;
+	justify-items: flex-start;
+}
+#play {
+	color: white;
+	border-style: none;
+	border-radius: 20px;
+
+	height: 40px;
+	line-height: 0;
+	margin-right: 10px;
+
+	font-size: 30px;
+	background-color: rgb(7, 111, 196);
+	align-self: center;
+}
+.leftLayout {
+	background-color: rgb(29, 26, 26);
+	height: 400px;
+	text-align: center;
+	width: 300px;
+	margin-top: 50px;
+
+	flex-wrap: wrap;
+}
+.container {
+}
+#picture {
+	border-radius: 10px;
+	padding: 10px 50px;
+	width: 200px;
+	height: 200px;
+}
+
+#audio-canvas {
+}
+
+.middleLayout {
+	display: flex;
+	background-color: rgb(29, 26, 26);
+	padding-left: 20px;
+	height: 100px;
+	width: 395px;
+	align-content: center;
+	margin-top: 50px;
+	border-radius: 999px;
+}
+.songInfos {
+	margin: 0;
+	display: block;
+	color: white;
+	height: 50px;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+#songName {
+	color: white;
+	margin: 0;
+}
+#artistName {
+	color: white;
+	opacity: 70%;
+	justify-content: center;
+	padding: 5px 0;
+	margin: 0;
+	text-align: center;
+}
+.LikeAndDownload {
+	display: flex;
+	height: 100px;
+	width: 100%;
+	background-color: rgb(29, 26, 26);
+	text-align: center;
+	justify-content: center;
+	margin: 0;
+}
+#like {
+	color: white;
+	padding: 0px 20px;
+	font-size: 30px;
+	margin: 0;
+}
+#like:hover {
+	color: red;
+	transition: .5s ease;
+}
+#share {
+	margin: 0;
+	color: white;
+	padding: 0px 20px;
+	font-size: 30px;
+}
+#download {
+	color: white;
+	padding: 0px 20px;
+	font-size: 30px;
+	margin: 0;
+}
+#download:hover {
+	color: rgb(7, 111, 196);
+	transition: .5s ease;
+}
+#share:hover {
+	color: rgb(109, 186, 250);
+	transition: .5s ease;
+}
+#downloadSong {
+	color: white;
+	background-color: rgb(66, 63, 63);
+	border: none;
+	opacity: 70%;
+	padding: 10px 80px;
+	margin-top: 50px;
+}
+.rightLayout {
+	display: flex;
+	flex-direction: row;
+	height: 300px;
+	width: 400px;
+	background-color: rgb(29, 26, 26);
+	margin-top: 50px;
+	align-items: center;
+	gap: 20px;
+}
+#buy {
+	padding: 20px 10px;
+	border: none;
+	border: 1px solid grey;
+	background-color: rgb(12, 11, 11);
+	color: white;
+	opacity: 80%;
+}
+@media only screen and (max-width: 700px) {
+	.navbar {
+		flex-wrap: wrap;
+		flex-grow: 1;
+	}
+	.rapper {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.right {
+		flex-grow: 1;
+		justify-content: center;
+	}
+	.middleLayout {
+		margin-top: 20px;
+	}
+	#audio-canvas {
+		height: 40px;
+		width: 400px;
+	}
+	#register {
+		font-size: 12px;
+	}
+	#signIn {
+		font-size: 12px;
+	}
+	#sell {
+		font-size: 12px;
+	}
+}
