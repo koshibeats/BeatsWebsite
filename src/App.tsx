@@ -82,12 +82,12 @@ function App() {
 						<AudioSpectrum
 							id="audio-canvas"
 							height={50}
-							width={320}
+							width={1000}
 							audioEle={audio}
 							capColor={'white'}
 							capHeight={0}
 							meterWidth={2}
-							meterCount={64}
+							meterCount={150}
 							meterColor={[
 								{ stop: 0, color: 'white' },
 								{ stop: 0.5, color: 'white' },
@@ -96,14 +96,17 @@ function App() {
 							gap={4}
 						/>
 					</div>
-				</div>
-
-				<div className="rightLayout">
-					<div className="BuyBeat">
-						<button id="buy">mp3 lease</button>
-						<button id="buy">wav lease</button>
-						<button id="buy">exclusive askjndasjdnaksj</button>
-						<button id="buy">unlimited lease</button>
+					<hr id="black" />
+					<div className="rightLayout">
+						<div className="BuyBeat">
+							<button id="buy">mp3 lease</button>
+							<button id="buy">wav lease</button>
+							<button id="buy">exclusive lease</button>
+							<button id="buy">unlimited lease</button>
+						</div>
+						<div className="commentBox">
+							<p id="comments">Here are the comments</p>
+						</div>
 					</div>
 				</div>
 			</div>
