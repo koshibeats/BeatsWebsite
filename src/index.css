@@ -295,6 +295,10 @@ html {
 	color: white;
 	opacity: 80%;
 }
+#buy:hover{
+	background-color: grey;
+	transition: .6s ease;
+}
 .commentBox {
 	flex-grow: 1;
 	height: 100%;

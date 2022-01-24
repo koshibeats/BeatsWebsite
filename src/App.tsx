@@ -1,18 +1,26 @@
 import React from 'react';
 import { useLayoutEffect, useMemo, useState } from 'react';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from "react-router-dom";
 import logo from './logo.svg';
 import lupe from './lupe.svg';
 import einkaufswagen from './einkaufswagen.svg';
 import './App.css';
 import AudioSpectrum from 'react-audio-spectrum2';
+import start from "./start";
+;
 
 function App() {
 	const buttons = document.getElementById('play');
 	const audio = useMemo(() => new Audio('song.mp3'), []);
 
-	const [ playing, setPlaying ] = useState(false);
+	const [playing, setPlaying] = useState(false);
 
-	const [ lastClick, setLastClick ] = useState(+new Date());
+	const [lastClick, setLastClick] = useState(+new Date());
 
 	useLayoutEffect(
 		() => {
@@ -26,7 +34,7 @@ function App() {
 
 			audio.addEventListener('play', resumed);
 		},
-		[ audio ]
+		[audio]
 	);
 
 	function toggle() {
@@ -40,10 +48,25 @@ function App() {
 	}
 
 	return (
+
+
+
 		<div className="App">
+
 			<div className="navbar">
+
+
 				<div className="left">
+					<a href= "start.tsx">
 					<p id="logo">koshi</p>
+					</a>
+					<Router>
+						<Switch>
+							<Route path ="/start" element={start} >
+							</Route>
+						</Switch>
+					</Router>
+
 					<div className="searchBar">
 						<img src={lupe} id="lupe" />
 
@@ -110,7 +133,9 @@ function App() {
 					</div>
 				</div>
 			</div>
+
 		</div>
+
 	);
 }
 
