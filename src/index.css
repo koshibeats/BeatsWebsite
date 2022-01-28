@@ -6,9 +6,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #111;
 }
-html {
-	position: sticky;
-}
 
 .navbar {
 	display: flex;
@@ -42,6 +39,9 @@ html {
 	filter: invert(1);
 	align-self: center;
 	transform: scaleX(-1);
+}
+.hidden {
+	visibility: hidden;
 }
 #einkaufswagen:hover {
 	background-color: rgb(49, 48, 48);
@@ -131,12 +131,12 @@ html {
 	display: flex;
 	background-color: rgb(66, 63, 63);
 	flex-shrink: 1;
-	height: 50%;
+	height: 50px;
 	align-items: center;
 	margin-top: 30px;
-	width: 100%;
+
 	border-radius: 20px;
-	width: 370px;
+	width: 100%;
 }
 .rapper {
 	height: 100%;
@@ -146,15 +146,10 @@ html {
 	justify-content: space-between;
 	overflow: hidden;
 }
-.buyBeats {
-	display: block;
+.BuyBeat {
 	height: 200px;
 	width: 1000px;
 	background-color: transparent;
-	position: relative;
-	right: 440px;
-	align-self: center;
-	justify-items: flex-start;
 }
 #play {
 	color: white;
@@ -171,7 +166,7 @@ html {
 }
 .leftLayout {
 	background-color: rgb(29, 26, 26);
-	height: 400px;
+	height: 600px;
 	text-align: center;
 	width: 300px;
 	margin-top: 50px;
@@ -191,14 +186,15 @@ html {
 }
 
 .middleLayout {
-	display: flex;
+	display: block;
 	background-color: rgb(29, 26, 26);
-	padding-left: 20px;
-	height: 100px;
+
+	height: 400px;
 	width: 395px;
 	align-content: center;
 	margin-top: 50px;
-	border-radius: 999px;
+	margin-left: 50px;
+	flex-grow: 1;
 }
 .songInfos {
 	margin: 0;
@@ -244,6 +240,7 @@ html {
 	margin: 0;
 	color: white;
 	padding: 0px 20px;
+
 	font-size: 30px;
 }
 #download {
@@ -271,20 +268,83 @@ html {
 .rightLayout {
 	display: flex;
 	flex-direction: row;
+
 	height: 300px;
-	width: 400px;
+
 	background-color: rgb(29, 26, 26);
-	margin-top: 50px;
-	align-items: center;
+	margin: 0;
+
 	gap: 20px;
 }
-#buy {
-	padding: 20px 10px;
+#black {
+	height: 3px;
+	background-color: rgb(46, 44, 44);
+	border-radius: 999px;
 	border: none;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	margin-top: 20px;
+}
+#buy {
+	padding: 40px 20px;
+	border: none;
+	width: fit-content;
 	border: 1px solid grey;
 	background-color: rgb(12, 11, 11);
 	color: white;
 	opacity: 80%;
+}
+#buy:hover {
+	background-color: rgb(41, 41, 41);
+	transition: .6s ease;
+}
+#buy:checked {
+	border: 1px solid blue;
+}
+.commentBox {
+	flex-grow: 1;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(29, 26, 26);
+	display: flex;
+	justify-content: center;
+}
+#comments {
+	color: white;
+}
+#line {
+	height: 3px;
+	background-color: rgb(46, 44, 44);
+	border-radius: 999px;
+	border: none;
+
+	justify-content: center;
+	padding: 0px 20px;
+	margin-top: 20px;
+}
+.informationColumn {
+	padding: 0px 20px;
+	display: block;
+}
+.row {
+	display: flex;
+
+	justify-content: space-between;
+}
+#p_row {
+}
+#bpm {
+	color: white;
+	font-size: 15px;
+}
+#leftText {
+	justify-content: flex-start;
+	color: white;
+}
+#rightText {
+	justify-content: flex-end;
+	color: white;
 }
 @media only screen and (max-width: 700px) {
 	.navbar {
@@ -301,10 +361,15 @@ html {
 	}
 	.middleLayout {
 		margin-top: 20px;
+		margin-left: 0;
+		flex-grow: 0;
 	}
 	#audio-canvas {
 		height: 40px;
 		width: 400px;
+	}
+	.rightLayout {
+		flex-wrap: wrap;
 	}
 	#register {
 		font-size: 12px;
