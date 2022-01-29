@@ -1,9 +1,9 @@
 import React from 'react';
 import AudioSpectrum from 'react-audio-spectrum2';
 import App from './App';
-import { useLayoutEffect, useMemo, useState, MouseEvent, Component, CSSProperties } from 'react';
+import { useLayoutEffect, useMemo, useState } from 'react';
 
-function visualizer() {
+function Visualizer() {
 	const buttons = document.getElementById('play');
 	const glass = document.getElementById('lupe');
 	const audio = useMemo(() => new Audio('song.mp3'), []);
@@ -64,4 +64,4 @@ function visualizer() {
 		</span>
 	);
 }
-export default visualizer;
+export default Visualizer;

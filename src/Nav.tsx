@@ -1,15 +1,14 @@
-import React from 'react';
-import App from './App';
-import logo from './logo.svg';
 import lupe from './lupe.svg';
 import einkaufswagen from './einkaufswagen.svg';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function Nav() {
 	return (
 		<div className="navbar">
 			<div className="left">
-				<p id="logo">koshi</p>
+				<Link to="/main">
+					<p id="logo">koshi</p>
+				</Link>
+
 				<div className="searchBar">
 					<img src={lupe} id="lupe" />
 
