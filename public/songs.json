@@ -3,24 +3,29 @@
         "songName" : "eternity",
         "artistName" : "Flow",
         "BPM" : "128BPM",
-        "key" : "C#"
+        "key" : "C#",
+        "image" : "eternity.png"
     },
     {
         "songName" : "forever",
         "artistName" : "Paul",
         "BPM" : "150BPM",
-        "key" : "D#"
+        "key" : "D#",
+        "image" : "forever.png"
+        
     },
     {
         "songName" : "trust",
         "artistName" : "Saul",
         "BPM" : "96BPM",
-        "key" : "G# Minor"
+        "key" : "G# Minor",
+        "image" : "trust.png"
     },
     {
         "songName" : "why",
         "artistName" : "Flow",
         "BPM" : "200BPM",
-        "key" : "F Minor"
+        "key" : "F Minor",
+        "image" : "why.png"
     }
 ]

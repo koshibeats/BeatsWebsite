@@ -1,6 +1,6 @@
 import './App.css';
 import Nav from './beatsWebsiteComponents/Nav';
-import MainSite from './mainSite';
+import MainSite from './mainSite/mainSite';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import BeatsWebsite from './beatsWebsiteComponents/BeatsWebsite';

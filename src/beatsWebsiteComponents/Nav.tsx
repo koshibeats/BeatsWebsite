@@ -1,5 +1,5 @@
-import lupe from './images/lupe.svg';
-import einkaufswagen from './images/einkaufswagen.svg';
+import lupe from '../images/lupe.svg'
+import einkaufswagen from '../images/einkaufswagen.svg';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function Nav() {
 	return (
