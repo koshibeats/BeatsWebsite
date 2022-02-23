@@ -1,0 +1,26 @@
+[
+    {
+        "songName" : "eternity",
+        "artistName" : "Flow",
+        "BPM" : "128BPM",
+        "key" : "C#"
+    },
+    {
+        "songName" : "forever",
+        "artistName" : "Paul",
+        "BPM" : "150BPM",
+        "key" : "D#"
+    },
+    {
+        "songName" : "trust",
+        "artistName" : "Saul",
+        "BPM" : "96BPM",
+        "key" : "G# Minor"
+    },
+    {
+        "songName" : "why",
+        "artistName" : "Flow",
+        "BPM" : "200BPM",
+        "key" : "F Minor"
+    }
+]
