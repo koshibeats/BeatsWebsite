@@ -1,6 +1,6 @@
-import Buy from './beatsWebsiteComponents/buy';
-import Visualizer from './beatsWebsiteComponents/visualizer';
-import SongInfo from './beatsWebsiteComponents/songInfo';
+import Buy from './buy';
+import Visualizer from './visualizer';
+import SongInfo from './songInfo';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function BeatsWebsite() {
