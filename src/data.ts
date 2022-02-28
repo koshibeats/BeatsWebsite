@@ -4,5 +4,4 @@ export interface beat {
     BPM: number,
     key: string,
     image: string
-
 }
